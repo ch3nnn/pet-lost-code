@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系主人"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  
+    "useExtendedLib": {
+      "weui": true
+    }
+  
+  
+}

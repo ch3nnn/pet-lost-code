@@ -1,0 +1,44 @@
+<!-- 宠物图片 -->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{data.petImageList}}" wx:key="key">
+        <swiper-item>
+            <image src="{{item.image}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+    </block>
+</swiper>
+<!-- 宠物寄语 -->
+<view class="weui-panel">
+    <view class="weui-panel__bd">
+        <view aria-labelledby="js_p4m1_title js_a11y_comma js_p4m1_desc" aria-describedby="js_p4m1_source js_a11y_comma js_p4m1_time js_a11y_comma js_p4m1_extra" class="weui-media-box weui-media-box_text" aria-role="link">
+            <view class="weui-media-box__desc" aria-hidden="true" id="js_p4m1_desc">
+                {{data.signature}}
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 档案信息 -->
+<view class="container">
+    <mp-cells ext-class="my-cells" title="档案信息">
+        <mp-cell>
+            <view>昵称: </view>
+            <view slot="footer">{{data.nickname}}</view>
+        </mp-cell>
+        <mp-cell>
+            <view>性别: </view>
+            <view slot="footer">{{data.gender}}</view>
+        </mp-cell>
+        <mp-cell>
+            <view>品种: </view>
+            <view slot="footer">{{data.type}}</view>
+        </mp-cell>
+        <mp-cell>
+            <view>生日: </view>
+            <view slot="footer">{{data.birthday}}</view>
+        </mp-cell>
+        <mp-cell>
+            <view>铲屎官wechat: </view>
+            <view slot="footer">{{data.masterWechat}}</view>
+        </mp-cell>
+    </mp-cells>
+</view>
+

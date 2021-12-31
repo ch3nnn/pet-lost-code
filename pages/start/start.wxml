@@ -1,0 +1,32 @@
+<!--start.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="/images/more/loading.gif"></image>
+  </view>
+
+  <block wx:else>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <!-- <image class="logo" src="/images/暹罗猫.png"></image> -->
+        <view class="userinfo">
+          <view class="userinfo-avatar">
+            <open-data type="userAvatarUrl"></open-data>
+      </view>
+        </view>
+        <image class="wave" src="/images/more/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="/images/more/wave.png" mode="aspectFill"></image>
+      </view>
+
+      <text class="username">欢迎光临</text>
+      <open-data class="wecome" type="userNickName"></open-data>
+      <view class="bd">
+         <!-- <image class="smalltitle" src="/images/more/confirm-word1.png"></image> -->
+        <view class="confirm-btn" bindtap='goToIndex'>
+          <text >进入小程序</text>
+        </view>
+        <text class="copyright">Copyright © ch3nnn.cn | 折腾不息 乐此不疲.</text>
+      </view>
+    </view>
+  </block>
+
+</view>

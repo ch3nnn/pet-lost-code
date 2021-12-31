@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<view class="container">
+    <view class="weui-panel weui-panel_access">
+			<view class="weui-panel__hd">主人信息</view>
+			<view class="weui-panel__bd">
+				<navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+					<view aria-hidden="true" class="weui-media-box__hd">
+						<image class="weui-media-box__thumb" src="https://dev-cdn.ch3nnn.cn/Fpj2_fCBAJrrnACMxrKENhsNWoOw?imageView2/2/w/400/h/500/interlace/1/q/100&last_modify=16340317396817144" alt></image>
+					</view>
+					<view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+						<text class="weui-media-box__title">Ch3nnnnn</text>
+						<view class="weui-media-box__desc">折腾不息 · 乐此不疲.</view>
+					</view>
+				</navigator>
+	
+			</view>
+    </view>
+</view>
+
